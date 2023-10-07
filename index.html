@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SAMPLES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    
+  <style>
+        .loading{
+          width: 80px;
+          height: 80px;
+          border: 10px solid #efefef;
+          margin: 20px auto;
+          border-radius: 50%;
+          border-top: 10px solid red;
+          animation: load 2s linear infinite;
+        }
+        @keyframes load {
+          form{
+            transform: rotate(0deg);
+          }
+          to{
+            transform: rotate(360deg);
+
+          }
+        }
+        /* second project */
+        .flip-card{
+          width: 400px;
+          height: 500px;
+          margin: 0 auto;
+          perspective: 800px;
+
+        }
+        .flip-card-front img{
+          width: 100%;
+          height: 100%;
+        }
+        .flip-card-inner{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 1s;
+          transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner{
+          transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+        }
+        .flip-card-back{
+          background-color: lightblue;
+          color: #fff;
+          transform: rotateY(180deg);
+          
+        }
+  </style>
+  </head>
+
+  <body>
+        <main class="loading"> </main>
+    <hr>
+    <!-- second project  -->
+         <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="۲۰۲۳۰۸۰۴_۱۸۲۸۳۹.jpg" alt="me">
+            </div>
+            <div class="flip-card-back">
+              <h1>Amir Ahmadzadeh</h1>
+              <h2>Job: Programmer</h2>
+               <h2>age : 33</h2>
+               <h2>from : Iran</h2>
+            </div>
+          </div>
+         </div>
+
+    
+  </body>
+</html>
